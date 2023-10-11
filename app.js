@@ -2,12 +2,12 @@ const constellations=[
     {
         name: "secretivename",
         supporterofdokja: true,
-        qualities: ["Secretive Plotter", "confusing", "the most ancient dream"],
+        qualities: ["Secretive Plotter", "more than one", "the most ancient dream"],
     },
     {
         name: "Persephone",
         supporterofdokja:true,
-        qualities: ["kind", "dried up",],
+        qualities: ["Queen of the Darkest Spring", "kind", "dried up",],
     },
     {
         name: "extremelylongnamethatwasneverrevealed",
@@ -17,17 +17,24 @@ const constellations=[
     {
         name: "Sun Wukong",
         supporterofdokja: true,
-        qualities: ["prisoner of the golden headband", "golden hair"],
+        qualities: ["Prisoner of the Golden Headband", "golden hair"],
     },
     {
         name: "???",
         supportofdokja: false,
-        qualities: ["most ancient dream", "eternity", "epilogue",],
+        qualities: ["Most Ancient Dream", "who?",],
+    },
+    {
+        name: "---",
+        supporterofdokja: true,
+        qualities: ["Demon King of Salvation", "weirdo", "epilogue", "eternity"],
     },
 ];
 
 constellations.forEach((el)=> console.log(el.name));
 constellations.forEach((el)=> console.log(el.qualities));
+
+
 
 const supporter = constellations.filter((constellations)=> constellations.supporterofdokja === true);
 console.log(supporter);
