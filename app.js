@@ -33,7 +33,9 @@ const constellations=[
 
 constellations.forEach((el)=> console.log(el.name));
 
-constellations.forEach((constellations)=> constellations.qualities.forEach((qualities)=> console.log(qualities)));
+constellations.forEach((constellations)=> 
+    constellations.qualities.forEach((qualities)=> console.log(qualities))
+);
 
 const notsupporter = constellations.filter((constellations)=> constellations.supporterofdokja !== true);
 console.log(notsupporter);
